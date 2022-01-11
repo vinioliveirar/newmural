@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>NEW MU</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#"><img id="logo" src="image/ubranco.png" ></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            
+            <ul id="menu" role="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Matérias</a></li>
+                <li><a href="#formulario">Contato</a></li>
+                <li><a href="">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="primary">
+            <section>
+                    <h1 id="title">MUral,<br> é tudo que você <br>
+                        precisa em um lugar só.
+                    </h1>
+                    
+            </section>
+            <section>
+                <img id="bgestudos" src="image/bgestudos.png" alt="">
+            </section>
+        </article>
+        <article id="secondary">
+            <section id="two">
+                <h2>Matérias</h2>
+                <p>Você terá as informações
+                    de todas as matérias,<br> datas de provas,
+                    data para a entrega dos trabalhos e muito mais.
+                </p>
+                <button id="btn-mat" type="submit">Acessar</button>
+            </section>
+            <section>
+                <img id="bgdois" src="image/bgdoiss.png" alt="">
+            </section>
+        </article>
+        <article id="tertiary">
+            <section id="title-tree">
+                <h2>Como Funciona</h2>
+            </section>
+            <section id="info">
+                <div>
+                    <img id="icon1"src="https://img.icons8.com/ultraviolet/40/000000/knowledge-sharing.png"/>
+                    
+                    <p>Tenha acesso aos conteudos das matérias.</p>
+                </div>
+                <div>
+                    <img id="icon1" src="https://img.icons8.com/ultraviolet/40/000000/ok.png"/>
+                    <p>Informações totalmente gratuitas.</p>
+                </div>
+                <div>
+                    <img id="icon1" src="https://img.icons8.com/ultraviolet/40/000000/link.png"/>
+                    <p>Compartilhe as informações com todos os alunos.</p>
+                </div>
+            </section>
+        </article>
+        <article id="contato">
+            <section>
+                <h2>Entre em contato</h2>
+            </section>
+            <section>
+                <form id="formulario" action="">
+                    
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required title="Digite seu nome" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="E-mail" required title="Digite seu e-mail" autocomplete="off">
+                    <input type="text" name="tel" id="tel" placeholder="Telefone" pattern="[0-9]{2}\d?[0-9]{4}[0-9]{4}" title="ddd+numero" autocomplete="off">
+                    <input type="text" name="msg" id="msg" placeholder="Digite sua mensagem..." title="Digite sua Mensagem" autocomplete="off">
+                    <button id="btn-submit" type="submit">Enviar mensagem</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Segunda versão desenvolvida por Vinicius Oliveira.</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Sora:wght@500&display=swap');
+body, ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+a:hover{
+    
+    border-bottom: 1px solid #51b3f8;
+}
+
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0F9AFE; /* #EFF8FF / #0F9AFE*/
+}
+/*logo*/
+
+img #imglogo{
+    width: 10px;
+}
+
+#logo {
+    width: 1.5rem;
+}
+
+#menu{
+    
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    color: #EFF8FF;
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+    
+}
+h1, h2{
+    color: #293145;
+    font-family: 'Sora', sans-serif;
+}
+p{
+    color: #293145;
+    font-family: 'Inter', sans-serif;
+}
+
+/*section primaria*/
+
+#primary{
+    box-sizing: border-box;
+    height: 640px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid black;*/
+    background-color: #EFF8FF;
+    
+    
+}
+
+section h1{
+    font-size: 48px;
+    padding: .5rem;
+    gap: .5rem;
+    
+}
+/*section secundaria*/
+#secondary{
+    box-sizing: border-box;
+    height: 500px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid black;*/
+    background-color: white;
+}
+
+/*botao materias*/
+
+#btn-mat{
+  width: 100px;
+  height: 56px;
+  background: #0F9AFE;
+  Font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  transition: .5s;
+}
+#btn-mat:hover{
+  background: #51b3f8;
+}
+
+/*section terceira*/
+#tertiary{
+  box-sizing: border-box;
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ /* border: 2px solid black;*/
+  background-color: #EFF8FF;
+}
+#info{
+  height: 400px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+/* parte contato*/ 
+#contato{
+  
+  height: 400px;
+  color: #FFFFFF;
+  background: #293145;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  Font-family: 'Inter', sans-serif;
+}
+
+#contato h2{
+  color: #FFFFFF;
+  font-family: 'Sora', sans-serif;
+}
+
+#formulario{
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgba(19, 125, 224, 0.5);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formulario input{
+  Font-family: 'Inter', sans-serif;
+  background: none;
+  margin: 10px;
+  width: 370px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid rgba(19, 125, 224, 0.5);
+  outline: none;
+  color: #EFF8FF;
+  transition: .3s;
+  
+}
+#formulario input:focus{
+  border: none;
+  border-bottom: 2px solid #51b3f8;
+}
+#formulario input::placeholder{
+  color:  #b3b3b3;
+}
+
+#btn-submit{
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  background: #0F9AFE;
+  Font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  box-shadow: 1px 2px 2px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+  transition: .5s;
+}
+#btn-submit:hover{
+  background: #51b3f8;
+}
+
+/* rodape*/
+footer{
+  height: 50px;
+  text-align: center;
+  background: #0F9AFE;
+}
+
+footer p{
+  Font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/*configurações mobile */
+@media (max-width: 600px){
+   
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #0F9AFE;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        color: #EFF8FF;
+        padding: 1rem 0; /* 1 rem = 16 px */
+        margin:0 1rem ;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+        transition: .5s;
+    }
+    #menu a:hover{
+      border-bottom: 1px solid #EFF8FF;
+    }
+    #btn-mobile{
+        color: #EFF8FF;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+      
+      /*section primaria*/
+      #primary{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 20px);
+      }
+      section h1{
+        font-size: 24px;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      section img {
+        width: 90%;
+        
+      }
+    /*section secundary*/
+      #secondary{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: calc(100vh - 10px);
+      }
+      section h2{
+        font-size: 24px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      section p{
+          text-align: center;
+      }
+      #two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* terceira section*/
+      #tertiary{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:100vh;
+      }
+      #info{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      #icon1{
+        width: 50px;
+      }
+
+      /*contatos*/
+      #contato{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        
+      }
+
+      #formulario{
+        
+        width: 100%;
+      }
+      #formulario input{
+        width: 250px;
+      }
+}
