@@ -109,6 +109,10 @@ label{
     z-index: 10;
 }
 
+#screen.ativo  {
+    z-index: 8;
+    
+}
 
 
 #screen-entrar{
