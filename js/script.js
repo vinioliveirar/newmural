@@ -3,8 +3,17 @@ const btnMobile = document.getElementById('btn-mobile');
 function toggleMenu(event){
     if(event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
-    const active = nav.classList.contains('active');
+    // se existe a class 'active' ele remove
+    // senão adiciona
+    // if (nav.classList.contains('active')) {
+    //     nav.classList.remove('active')
+    // } else {
+    //     nav.classList.add('active')
+    // }
+    const active = nav.classList.toggle('active');
+
+    //const active = nav.classList.contains('active');
+
     event.currentTarget.setAttribute('aria-expanded', active);
     if(active){ 
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
@@ -15,4 +24,8 @@ function toggleMenu(event){
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+
+
 

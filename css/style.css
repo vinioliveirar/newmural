@@ -20,7 +20,7 @@ a:hover{
 
 #header {
     box-sizing: border-box;
-    height: 70px;
+    height: 50px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -222,7 +222,7 @@ footer p{
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 50px;
         right: 0px;
         background: #0F9AFE;
         height: 0px;
@@ -233,7 +233,7 @@ footer p{
     }
     
     #nav.active #menu{
-        height: calc(100vh - 70px);
+        height: calc(100vh - 50px);
         visibility: visible;
         overflow-y: auto;
     }
