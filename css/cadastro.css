@@ -83,19 +83,29 @@ label{
 
 /* imagem background*/
 
+#svg{
+   /* border: 2px solid red;*/
+    position: absolute;
+    width: 450px;
+    height: calc(100vh - 70px);
+    margin: 10px;
+}
 
 /*conteudo*/ 
 #container{
-
+    width: 100vw;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 80px);
 }
+
+
 /* back do formulerio */
 #screen{
     
-    position: absolute;
+    
     border-radius: 5px;
     height: calc(100vh - 120px);
     width: 400px;
@@ -105,42 +115,35 @@ label{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    top: 80px;
+    margin-top: 30px;
     margin-bottom: 40px;
     transition: .5s;
     z-index: 10;
 }
 
-#screen.ativo  {
-    z-index: 8;
-    
-}
-
 
 #screen-entrar{
-    position: relative;
+
     border-radius: 5px;
     height: calc(100vh - 120px);
     width: 400px;
     box-shadow: 0px 0px 24px #5c5696;
     background-color: #293145;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    top: 30px;
+    margin-top: 30px;
     margin-bottom: 40px;
     transition: .5s;
-    z-index: 9;
-    
-    
-    /* visibility: collapse;*/
+    z-index: 10;
+
 }
 
 /* config formulario*/
 
 #form{
-    /*padding: 30px;*/
+    
     height: 80%;
     display: flex;
     align-items: center;
@@ -269,21 +272,25 @@ input{
 
     /*main */
     #screen, #screen-entrar{
-       /* width: 90%;*/
+        width: calc(100vw - 10px);
         margin: 0;
-        height: calc(100vh - 90px);
+        height: calc(100vh - 200px);
     }
 
     #form{
         width: auto;
         height: 380px;
     }
+
+    #svg{
+        display: none; 
+    }
 }
 
 @media (max-width: 400px) {
     #screen, #screen-entrar{
-        width: 90%;
-        height: calc(100vh - 90px);
+        width: calc(100vw - 10px);
+        height: calc(100vh - 150px);
     }
 
 

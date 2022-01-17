@@ -25,8 +25,36 @@
             </ul>
         </nav>
     </header>
+    <!--
+        <div id="backg">
+            <div>
+                <img id="svg" src="image/undraw_access_account_re_8spm.svg" alt="">
+            </div>
+        </div>
+    -->    
     <main id="container">
-        <section id="screen">
+
+        <div id="login">    
+            <section id="screen">
+                <div>
+                    <h1>Faça seu login</h1>
+                </div>
+                <div id="form">
+                    <form name="form1"  action="">
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Digite seu e-mail">
+                        <label for="">Senha</label>
+                        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Digite sua senha">
+                        <button id="btn-submit" type="submit">Entrar</button>
+                        <p><a href="">Esqueci minha senha</a></p>
+                    </form>
+                </div>
+                <div >
+                    <button onclick="ManipulaConteudo()" id="btn-acessar">Criar conta</button>
+                </div>
+            </section>
+        </div>
+        <section id="screen-entrar">
             <div>
                 <h1>Crie sua conta</h1>
             </div>
@@ -42,30 +70,11 @@
                     
                 </form>
             </div>
-            <div id="btn-acessar">
-                <button>Fazer Login</button>
+            <div >
+                <button onclick="retornarConteudo()" id="btn-entrar" >Fazer Login</button>
             </div>
         </section>
-        <div id="login">    
-            <section id="screen-entrar">
-                <div>
-                    <h1>Faça seu login</h1>
-                </div>
-                <div id="form">
-                    <form name="form1"  action="">
-                        <label for="">Email</label>
-                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Digite seu e-mail">
-                        <label for="">Senha</label>
-                        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Digite sua senha">
-                        <button id="btn-submit" type="submit">Entrar</button>
-                        <p><a href="">Esqueci minha senha</a></p>
-                    </form>
-                </div>
-                <div id="btn-acessar">
-                    <button>Criar conta</button>
-                </div>
-            </section>
-        </div>
+
     </main>
 </body>
 <script src="js/script.js"></script>
